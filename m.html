@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WsW</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
+    <style media="screen">
+        .background-duden-yellow {
+            background-color: #fece31;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container is-max-desktop">
+        <nav class="navbar background-duden-yellow">
+            <div class="navbar-brand">
+                <div class="navbar-item">
+                    <figure class="image">
+                        <img src="images/düdn.png" style="max-width:135px; max-height:63px;">
+                    </figure>
+                </div>
+                <div class="navbar-item">
+                    <p class="content is-small has-text-black has-text-weight-bold">
+                        Wörterbuch der <br> sinnlosen Wörter
+                    </p>
+                </div>
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">
+                        Zurück
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container p-3">
+        <div class="box">
+            <p class="title is-3">
+                Malerlaubnis
+            </p>
+            <p class="content">
+                Eine Erlaubnis, die Flugzeuge an bestimmten Tagen bekommen.
+                <br><br>
+                <i>Heute scheint die Sanne hell, niemand hat eine Malerlaubnis.</i>
+            </p>
+        </div>
+        <div class="box">
+            <p class="title is-3">
+                Mehl
+            </p>
+            <p class="content">
+                Ein süßes Pulver, das am Weihnachstmarkt seinen bemerkenswertesten Einsatz findet.
+                <br><br>
+                <i>Diese Stäbchen sind gar nicht lecker, wer hat das Mehl vergessen!?!?!</i>
+            </p>
+        </div>
+        <div class="box">
+            <p class="title is-3">
+                Mh
+            </p>
+            <p class="content">
+                Unzufriedenheit
+                <br><br>
+                <i>Mh.</i>
+            </p>
+        </div>
+        <div class="box">
+            <p class="title is-3">
+                Mhh
+            </p>
+            <p class="content">
+                "Ja, ich verstehe, erzähle bitte weiter."
+                <br><br>
+                <i>Mhh...</i>
+            </p>
+        </div>
+        <div class="box">
+            <p class="title is-3">
+                Mhhh
+            </p>
+            <p class="content">
+                Ach so!
+                <br><br>
+                <i>Mhhh!</i>
+            </p>
+        </div>
+        <div class="box">
+            <p class="title is-3">
+                motiviert
+            </p>
+            <p class="content">
+                Ein Gefühlszustand von Bäumen mit außergewöhnlich niedrigen Zweigen.
+                <br><br>
+                <i>Sogar ohne Blätter dürfen die Bäume sich motiviert fühlen.</i>
+            </p>
+        </div>
+        <div class="box">
+            <p class="title is-3">
+                Mucke
+            </p>
+            <p class="content">
+                Die erste Mücke des Jahres.
+                <br><br>
+                <i>Bei mir im Zimmer ist eine Mücke. Mucke heißt sie. Mucke die Mücke.</i>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

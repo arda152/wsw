@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WsW</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
+    <style media="screen">
+        .background-duden-yellow {
+            background-color: #fece31;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container is-max-desktop">
+        <nav class="navbar background-duden-yellow">
+            <div class="navbar-brand">
+                <div class="navbar-item">
+                    <figure class="image">
+                        <img src="images/düdn.png" style="max-width:135px; max-height:63px;">
+                    </figure>
+                </div>
+                <div class="navbar-item">
+                    <p class="content is-small has-text-black has-text-weight-bold">
+                        Wörterbuch der <br> sinnlosen Wörter
+                    </p>
+                </div>
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">
+                        Zurück
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container p-3">
+        <div class="box">
+            <p class="title is-3">
+                Rentier
+            </p>
+            <p class="content">
+                Eine eine Säugetierart aus der Familie der Hirsche. Es lebt zirkumpolar im Sommer in den Tundren und im Winter in der Taiga Nordeurasiens und Nordamerikas sowie auf Grönland und anderen arktischen Inseln. Kann mörderisch werden.
+                <br><br>
+                <i>Diese Skibahn hat die Schwerigkeitsniveau "Geweih"</i>
+            </p>
+        </div>
+        <div class="box">
+            <p class="title is-3">
+                Rucksack
+            </p>
+            <p class="content">
+                Der dichteste, fünftgrößte und der Sonne drittnächste Planet des Sonnensystems.
+                <br><br>
+                <i>Mein Rucksack ist zu schwer aber man kann damit sehr schnell überall hinlaufen.</i>
+            </p>
+        </div>
+        <div class="box">
+            <p class="title is-3">
+                Rumpelfesser
+            </p>
+            <p class="content">
+                Pauken
+                <br><br>
+                <i>Ich erzehl euch von den Trummen, man nenne yetz bey uns Tympanu als die grossen Herbauken, von kupferen kessell gemacht und mir Kalbs fell über zogen, daruff schlecht man mit Klüpfeln, das es ser laut und helle tumelt.
+Under Fürsten höfe zu den felt trumeten, wan man zu tisch plaset oder wan ein Fürst in ein Stat ein reitet oder aufzeucht oder in das Felt zeucht, das synd gar ungeheur rumpelfesser!</i>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
