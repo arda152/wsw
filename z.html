@@ -32,6 +32,19 @@
                 });
             }
 
+            var numberDisplayValues = ["199334", "199334", "199335", "199336", "199337", "199338", "1993....", "Äähmm", "Mist", "0", "1", "2", "  ", "  ", "  "];
+
+            setInterval(updateNumber, 1500)
+            var counter = 0
+
+            function updateNumber() {
+                if (counter == numberDisplayValues.length) {
+                    counter = 0;
+                }
+                document.getElementById("numberDisplay").innerHTML = numberDisplayValues[counter];
+                counter += 1;
+            }
+
         });
     </script>
     <style media="screen">
@@ -74,12 +87,12 @@
     <div class="container p-3">
         <div class="box">
             <p class="title is-3">
-                gemacht.
+                zählen
             </p>
             <p class="content">
-                alles falsch
+                Die Anzahl von etwas, den Betrag einer Geldsumme feststellen. Bei höheren Zahlen kann zählen sehr schwierig werden.
                 <br><br>
-                <i>Du hast</i>
+                <i id="numberDisplay"></i>
             </p>
         </div>
     </div>
